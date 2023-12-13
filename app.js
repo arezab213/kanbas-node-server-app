@@ -2,6 +2,7 @@ import express from 'express';
 import Hello from "./hello.js"
 import Lab5 from "./lab5.js";
 import CourseRoutes from "./courses/routes.js";
+import ModuleRoutes from "./Modules/routes.js";
 import cors from "cors";
 
 const app = express()
@@ -10,4 +11,5 @@ app.use(express.json());
 Lab5(app);
 Hello(app);
 CourseRoutes(app);
+ModuleRoutes(app);
 app.listen(4000)
