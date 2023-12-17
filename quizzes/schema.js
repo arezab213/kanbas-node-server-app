@@ -7,8 +7,10 @@ const quizSchema = new mongoose.Schema({
       availableUntilDate: {type: Date, default: Date.UTC(2023, 4, 15)},
       dueDate: {type: Date, default: Date.UTC(2023, 4, 15)},
       points: {type: Number, default: 100},
+      timeLimit: {type: mongoose.Schema.Types.Mixed, default: 30},
       description: {type: String, default: "Quiz Description"},
-      published: {type: Boolean, default: false}
+      published: {type: Boolean, default: false},
+      shuffleAnswers: {type: Boolean, default: false},
     },
     {collection: "quizzes"});
 
