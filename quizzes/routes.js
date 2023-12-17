@@ -7,6 +7,11 @@ function QuizRoutes(app) {
     res.json(quizzes);
   };
 
+  const findQuizById = async (req, res) => {
+    const quiz = await dao.findQuizById(req.params.quizId);
+    res.json(quiz);
+  };
+
   const createQuiz = async (req, res) => {
     const {courseId, quizId} = req.params;
     const quiz = await dao.createQuiz(
@@ -26,6 +31,7 @@ function QuizRoutes(app) {
   }
 
   app.get("/api/courses/:courseId/quizzes", findQuizzesByCourseId);
+  app.get("/api/quizzes/:quizId", findQuizById);
   app.post("/api/courses/:courseId/quizzes/:quizId", createQuiz);
   app.delete("/api/quizzes/:quizId", deleteQuiz);
   app.put("/api/quizzes/:quizId", updateQuiz)
