@@ -7,7 +7,7 @@ function CourseRoutes(app) {
   };
 
   const findCourseById = async (req, res) => {
-    const course = await dao.findCourseById(req.params.userId);
+    const course = await dao.findCourseById(req.params.courseId);
     res.json(course);
   };
 
