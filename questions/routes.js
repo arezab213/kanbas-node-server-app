@@ -31,7 +31,7 @@ function QuestionRoutes(app) {
 
   app.get("/api/quizzes/:quizId/questions", findQuestionsByQuizId);
   app.get("/api/questions/:questionId", findQuestionById);
-  app.post("/api/quizzes/:quizId/questions/", createQuestion);
+  app.post("/api/quizzes/:quizId/questions", createQuestion);
   app.delete("/api/questions/:questionId", deleteQuestion);
   app.put("/api/questions/:questionId", updateQuestion)
 }
