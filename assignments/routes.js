@@ -1,35 +1,36 @@
 import db from "../Database/index.js";
+import * as dao from "./dao.js";
 
 function AssignmentRoutes(app) {
-  app.get("/api/courses/:cid/assignments", (req, res) => {
-    const {cid} = req.params;
-    const assignments = db.assignments.filter((a) => a.course === cid);
-    res.send(assignments);
-  });
+  const findAssignmentsByCourseId = async (req, res) => {
+    const assignments = await dao.findAssignmentsByCourseId(
+        req.params.courseId);
+    res.json(assignments);
+  };
 
-  app.post("/api/courses/:cid/assignments/:aid", (req, res) => {
-    const {cid, aid} = req.params;
-    const newAssignment = {
-      ...req.body,
-      course: cid,
-      _id: aid,
-    };
-    db.assignments.push(newAssignment);
-    res.send(newAssignment);
-  });
+  const createAssignment = async (req, res) => {
+    const {courseId, assignmentId} = req.params;
+    const assignment = await dao.createAssignment(
+        {...req.body, _id: assignmentId, course: courseId});
+    res.json(assignment);
+  };
 
-  app.delete("/api/assignments/:aid", (req, res) => {
-    const {aid} = req.params;
-    db.assignments = db.assignments.filter((a) => a._id !== aid);
-    res.sendStatus(200);
-  });
+  const deleteAssignment = async (req, res) => {
+    const status = await dao.deleteAssignment(req.params.assignmentId);
+    res.json(status);
+  };
 
-  app.put("/api/assignments/:aid", (req, res) => {
-    const {aid} = req.params;
-    const assignmentIndex = db.assignments.findIndex((a) => a._id === aid);
-    db.assignments[assignmentIndex] = {...db.assignments[assignmentIndex], ...req.body};
-    res.sendStatus(204);
-  });
+  const updateAssignment = async (req, res) => {
+    const status = await dao.updateAssignment(req.params.assignmentId,
+        req.body);
+    res.json(status)
+  }
+
+  app.get("/api/courses/:courseId/assignments", findAssignmentsByCourseId);
+  app.post("/api/courses/:courseId/assignments/:assignmentId",
+      createAssignment);
+  app.delete("/api/assignments/:assignmentId", deleteAssignment);
+  app.put("/api/assignments/:assignmentId", updateAssignment)
 }
 
 export default AssignmentRoutes;
