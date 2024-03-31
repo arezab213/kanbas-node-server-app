@@ -1,8 +1,8 @@
 [
   {
-    "_id": "A101",
+    "_id": "f1ccce7be9da685f9e515740",
     "title": "Propulsion Assignment",
-    "course": "RS101",
+    "course": "65510e70870c092d5441bc94",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -10,9 +10,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A102",
+    "_id": "f1ccce7be9da685f9e515741",
     "title": "Combustion Analysis",
-    "course": "RS101",
+    "course": "65510e70870c092d5441bc94",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -20,9 +20,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A103",
+    "_id": "f1ccce7be9da685f9e515742",
     "title": "Nozzle Design Project",
-    "course": "RS101",
+    "course": "65510e70870c092d5441bc94",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -30,9 +30,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A201",
+    "_id": "f1ccce7be9da685f9e515743",
     "title": "Aerodynamics Quiz",
-    "course": "RS102",
+    "course": "65510e70870c092d5441bc95",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -40,9 +40,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A202",
+    "_id": "f1ccce7be9da685f9e515744",
     "title": "Flow Analysis",
-    "course": "RS102",
+    "course": "65510e70870c092d5441bc95",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -50,9 +50,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A203",
+    "_id": "f1ccce7be9da685f9e515745",
     "title": "Heating Analysis",
-    "course": "RS102",
+    "course": "65510e70870c092d5441bc95",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -60,9 +60,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A301",
+    "_id": "f1ccce7be9da685f9e515746",
     "title": "Structural Design Task",
-    "course": "RS103",
+    "course": "65510e70870c092d5441bc96",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -70,9 +70,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A302",
+    "_id": "f1ccce7be9da685f9e515747",
     "title": "Orbital Calculations",
-    "course": "RS103",
+    "course": "65510e70870c092d5441bc96",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",
@@ -80,9 +80,9 @@
     "dueDate": "2023-05-15"
   },
   {
-    "_id": "A303",
+    "_id": "f1ccce7be9da685f9e515748",
     "title": "Systems Engineering Exam",
-    "course": "RS103",
+    "course": "65510e70870c092d5441bc96",
     "points": 100,
     "description": "Assignment Description",
     "availableFromDate": "2023-01-10",

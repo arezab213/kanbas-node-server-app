@@ -1,0 +1,40 @@
+[
+  {
+    "_id": "657f837a12531944823b901f",
+    "title": "New Question Title",
+    "question": "New Question Description",
+    "points": 10,
+    "questionType": "MC",
+    "quiz": "5701b4ba872c3351fcd57c64",
+    "options": [
+      {
+        "text": "Question 1",
+        "isCorrect": true,
+        "_id": {
+          "$oid": "657f837a12531944823b9020"
+        }
+      },
+      {
+        "text": "Question 2",
+        "isCorrect": false,
+        "_id": {
+          "$oid": "657f837a12531944823b9021"
+        }
+      },
+      {
+        "text": "Question 3",
+        "isCorrect": false,
+        "_id": {
+          "$oid": "657f837a12531944823b9022"
+        }
+      },
+      {
+        "text": "Question 4",
+        "isCorrect": false,
+        "_id": {
+          "$oid": "657f837a12531944823b9023"
+        }
+      }
+    ]
+  }
+]

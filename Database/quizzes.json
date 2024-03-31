@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "5701b4ba872c3351fcd57c64",
+    "title": "Propulsion Quiz",
+    "course": "65510e70870c092d5441bc94",
+    "points": 100,
+    "description": "Covers Propulsion Module",
+    "availableFromDate": "2023-01-17",
+    "availableUntilDate": "2023-05-17",
+    "dueDate": "2023-05-17",
+    "published": true,
+    "shuffleAnswers": false,
+    "timeLimit": 30
+  },
+  {
+    "_id": "ed051424a7b7250e93e30067",
+    "title": "Nozzle Design Quiz",
+    "course": "65510e70870c092d5441bc94",
+    "points": 105,
+    "description": "Covers Nozzle Design Module",
+    "availableFromDate": "2023-01-11",
+    "availableUntilDate": "2023-05-15",
+    "dueDate": "2023-05-15",
+    "published": true,
+    "shuffleAnswers": false,
+    "timeLimit": 30
+  },
+  {
+    "_id": "c33685173ba22261b507d8e6",
+    "title": "Fuel and Combustion Quiz",
+    "course": "65510e70870c092d5441bc94",
+    "points": 100,
+    "description": "Covers Fuel and Combustion Module",
+    "availableFromDate": "2023-01-10",
+    "availableUntilDate": "2023-05-15",
+    "dueDate": "2023-05-15",
+    "published": true,
+    "shuffleAnswers": true,
+    "timeLimit": 30
+  }
+]
